@@ -1,0 +1,5 @@
+/vendor
+/yii
+/yii_test
+/yii_test.bat
+db-local.php
