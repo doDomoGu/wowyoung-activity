@@ -1,6 +1,7 @@
 <?php
 namespace frontend\controllers;
 
+use frontend\models\User;
 use Yii;
 use yii\base\InvalidParamException;
 use yii\web\BadRequestHttpException;
@@ -72,6 +73,9 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        $user = User::find()->All();
+        var_dump(count($user));exit;
+
         return $this->render('index');
     }
 
