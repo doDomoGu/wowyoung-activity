@@ -73,8 +73,8 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        $user = User::find()->All();
-        var_dump(count($user));exit;
+        /*$user = User::find()->All();
+        var_dump(count($user));exit;*/
 
         return $this->render('index');
     }
