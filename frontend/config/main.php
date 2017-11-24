@@ -46,6 +46,8 @@ return [
             'enablePrettyUrl' => true,
             'showScriptName' => false,
             'rules' => [
+                //'2017sh_dreamday_enter.html' => 'site/index',
+                '<act_name:\w+>.html' => 'site/index'
             ],
         ],
 

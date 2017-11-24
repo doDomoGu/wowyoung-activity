@@ -1,6 +1,9 @@
 <?php
 namespace frontend\controllers;
 
+use app\models\Activity;
+use app\models\Record;
+use frontend\models\RecordForm;
 use frontend\models\User;
 use Yii;
 use yii\base\InvalidParamException;
@@ -19,10 +22,16 @@ use frontend\models\ContactForm;
  */
 class SiteController extends Controller
 {
+    public $layout = 'main_blank';
+
+
+    public $activity_arr = [
+        '2017sh_dreamday_enter' => 1
+    ];
     /**
      * @inheritdoc
      */
-    public function behaviors()
+    /*public function behaviors()
     {
         return [
             'access' => [
@@ -48,7 +57,7 @@ class SiteController extends Controller
                 ],
             ],
         ];
-    }
+    }*/
 
     /**
      * @inheritdoc
@@ -56,13 +65,13 @@ class SiteController extends Controller
     public function actions()
     {
         return [
-            'error' => [
+            /*'error' => [
                 'class' => 'yii\web\ErrorAction',
-            ],
-            'captcha' => [
+            ],*/
+            /*'captcha' => [
                 'class' => 'yii\captcha\CaptchaAction',
                 'fixedVerifyCode' => YII_ENV_TEST ? 'testme' : null,
-            ],
+            ],*/
         ];
     }
 
@@ -73,145 +82,55 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
-        /*$user = User::find()->All();
-        var_dump(count($user));exit;*/
+        $act_name = Yii::$app->request->get('act_name');
 
-        return $this->render('index');
-    }
-
-    /**
-     * Logs in a user.
-     *
-     * @return mixed
-     */
-    public function actionLogin()
-    {
-        if (!Yii::$app->user->isGuest) {
-            return $this->goHome();
-        }
-
-        $model = new LoginForm();
-        if ($model->load(Yii::$app->request->post()) && $model->login()) {
-            return $this->goBack();
-        } else {
-            return $this->render('login', [
-                'model' => $model,
-            ]);
-        }
-    }
-
-    /**
-     * Logs out the current user.
-     *
-     * @return mixed
-     */
-    public function actionLogout()
-    {
-        Yii::$app->user->logout();
-
-        return $this->goHome();
-    }
-
-    /**
-     * Displays contact page.
-     *
-     * @return mixed
-     */
-    public function actionContact()
-    {
-        $model = new ContactForm();
-        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-            if ($model->sendEmail(Yii::$app->params['adminEmail'])) {
-                Yii::$app->session->setFlash('success', 'Thank you for contacting us. We will respond to you as soon as possible.');
-            } else {
-                Yii::$app->session->setFlash('error', 'There was an error sending your message.');
-            }
-
-            return $this->refresh();
-        } else {
-            return $this->render('contact', [
-                'model' => $model,
-            ]);
-        }
-    }
-
-    /**
-     * Displays about page.
-     *
-     * @return mixed
-     */
-    public function actionAbout()
-    {
-        return $this->render('about');
-    }
-
-    /**
-     * Signs user up.
-     *
-     * @return mixed
-     */
-    public function actionSignup()
-    {
-        $model = new SignupForm();
-        if ($model->load(Yii::$app->request->post())) {
-            if ($user = $model->signup()) {
-                if (Yii::$app->getUser()->login($user)) {
-                    return $this->goHome();
-                }
+        $activity = Activity::find()
+            ->where(['status'=>1])
+            ->andWhere(['<','start_time',date('Y-m-d H:i:s')])
+            ->andWhere(['>','end_time',date('Y-m-d H:i:s')])
+            ->all();
+        $activity_arr = [];
+        $activity_arr2 = [];
+        if($activity){
+            foreach($activity as $act){
+                $activity_arr[] = $act->name;
+                $activity_arr2[$act->name] = $act->id;
             }
         }
 
-        return $this->render('signup', [
-            'model' => $model,
-        ]);
-    }
 
-    /**
-     * Requests password reset.
-     *
-     * @return mixed
-     */
-    public function actionRequestPasswordReset()
-    {
-        $model = new PasswordResetRequestForm();
-        if ($model->load(Yii::$app->request->post()) && $model->validate()) {
-            if ($model->sendEmail()) {
-                Yii::$app->session->setFlash('success', 'Check your email for further instructions.');
+        if(in_array($act_name,$activity_arr)){
 
-                return $this->goHome();
-            } else {
-                Yii::$app->session->setFlash('error', 'Sorry, we are unable to reset password for the provided email address.');
+            $this->layout = 'main_activity';
+
+            $model = new RecordForm();
+            if ($model->load(Yii::$app->request->post())) {
+                $record = new Record();
+                $record->name = $model->name;
+                $record->mobile = $model->mobile;
+                $record->act_id = $activity_arr2[$act_name];
+                $record->add_time = date('Y-m-d H:i:s');
+                $request = Yii::$app->request;
+                $record->user_ip = $request->getUserIP();
+                $record->user_host = $request->getUserHost();
+                $record->user_agent = $request->getUserAgent();
+                $record->save();
+
+                Yii::$app->session->setFlash('success','报名信息提交成功！');
+
+                return $this->refresh();
             }
+
+            $params['model'] = $model;
+            return $this->render('../activity/'.$act_name,$params);
         }
 
-        return $this->render('requestPasswordResetToken', [
-            'model' => $model,
-        ]);
+        return $this->render('../activity/not_found');
     }
 
-    /**
-     * Resets password.
-     *
-     * @param string $token
-     * @return mixed
-     * @throws BadRequestHttpException
-     */
-    public function actionResetPassword($token)
-    {
-        try {
-            $model = new ResetPasswordForm($token);
-        } catch (InvalidParamException $e) {
-            throw new BadRequestHttpException($e->getMessage());
-        }
-
-        if ($model->load(Yii::$app->request->post()) && $model->validate() && $model->resetPassword()) {
-            Yii::$app->session->setFlash('success', 'New password saved.');
-
-            return $this->goHome();
-        }
-
-        return $this->render('resetPassword', [
-            'model' => $model,
-        ]);
+    public function actionError(){
+        return $this->render('../activity/not_found');
     }
+
+
 }
