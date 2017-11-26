@@ -1,0 +1,12 @@
+.kspopwin{z-index:101;display:none}
+.kspopbg{width:100%;height:100%;position:fixed;top:0;left:0;background-color:#333; opacity:0.75;filter:alpha(opacity=75);z-index:100;display:none}
+
+/*如果不想要自带的白底，可将此处背景色去除，并看情况对内部的对象使用背景*/
+.kspopcontent{overflow: hidden;background: #fff;border-radius: 0px;}
+
+
+.kspop-header{background: #F7E900;color: #333;font-weight: bold;padding:10px 0 10px 15px;position:relative;}/*ie7只能用padding，没法用line-height，*/
+.kspop-close{width: 40px;text-align: center;/* height:20px; */position: absolute;right: 5px;top: 0px;font-size: 28px;color: #fff;}
+
+.kspop-close:link,.kspop-close:visited{text-decoration:none}
+.kspop-close:hover,.kspop-close:active{text-decoration:none;color:#666;/* text-shadow: 0 0px 0 #fff; */}

@@ -101,7 +101,7 @@ class SiteController extends Controller
 
         if(in_array($act_name,$activity_arr)){
 
-            $this->layout = 'main_activity';
+            $this->layout = false;
 
             $model = new RecordForm();
             if ($model->load(Yii::$app->request->post())) {
