@@ -1,8 +1,8 @@
 <?php
 namespace frontend\controllers;
 
-use app\models\Activity;
-use app\models\Record;
+use frontend\models\Activity;
+use frontend\models\Record;
 use frontend\models\RecordForm;
 use frontend\models\User;
 use Yii;
@@ -160,7 +160,6 @@ class SiteController extends Controller
                 ]
             ];
             if ($model->load($post) && $model->validate()) {
-
                 $record = new Record();
                 $record->name = $model->name;
                 $record->mobile = $model->mobile;
@@ -176,12 +175,12 @@ class SiteController extends Controller
                     $message = '提交申请成功，谢谢！';
                 }else{
                     if($record->hasErrors('mobile')){
-                        $message = '请填写正确的11位手机号码!';
+                        $message = $record->getFirstError('mobile');
                     }
                 }
             }else{
                 if($model->hasErrors('mobile')){
-                    $message = '请填写正确的11位手机号码!';
+                    $message = $model->getFirstError('mobile');
                 }
             }
         }
