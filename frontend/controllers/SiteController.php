@@ -25,6 +25,10 @@ class SiteController extends Controller
     public $layout = 'main_blank';
 
 
+    public function init(){
+        $this->enableCsrfValidation = false;
+    }
+
     public $activity_arr = [
         '2017sh_dreamday_enter' => 1
     ];
@@ -103,7 +107,9 @@ class SiteController extends Controller
 
             $this->layout = false;
 
-            $model = new RecordForm();
+            return $this->render('../activity/'.$act_name);
+
+            /*$model = new RecordForm();
             if ($model->load(Yii::$app->request->post())) {
                 $record = new Record();
                 $record->name = $model->name;
@@ -122,7 +128,7 @@ class SiteController extends Controller
             }
 
             $params['model'] = $model;
-            return $this->render('../activity/'.$act_name,$params);
+            return $this->render('../activity/'.$act_name,$params);*/
         }
 
         return $this->render('../activity/not_found');
@@ -130,6 +136,59 @@ class SiteController extends Controller
 
     public function actionError(){
         return $this->render('../activity/not_found');
+    }
+
+    public function actionCollection(){
+        $message = '提交失败，信息有误！';
+
+        $model = new RecordForm();
+
+        $act_name = Yii::$app->request->post('act_name');
+
+        $activity = Activity::find()
+            ->where(['name'=>$act_name])
+            ->andWhere(['status'=>1])
+            ->andWhere(['<','start_time',date('Y-m-d H:i:s')])
+            ->andWhere(['>','end_time',date('Y-m-d H:i:s')])
+            ->one();
+
+        if($activity!=NULL){
+            $post = [
+                'RecordForm'=>[
+                    'name'=>Yii::$app->request->post('v1'),
+                    'mobile'=>Yii::$app->request->post('v2'),
+                ]
+            ];
+            if ($model->load($post) && $model->validate()) {
+
+                $record = new Record();
+                $record->name = $model->name;
+                $record->mobile = $model->mobile;
+                $record->act_id = $activity->id;
+                $record->add_time = date('Y-m-d H:i:s');
+                $request = Yii::$app->request;
+                $record->user_ip = $request->getUserIP();
+                $record->user_host = $request->getUserHost();
+                $record->user_agent = $request->getUserAgent();
+
+                if($record->save()){
+
+                    $message = '提交申请成功，谢谢！';
+                }else{
+                    if($record->hasErrors('mobile')){
+                        $message = '请填写正确的11位手机号码!';
+                    }
+                }
+            }else{
+                if($model->hasErrors('mobile')){
+                    $message = '请填写正确的11位手机号码!';
+                }
+            }
+        }
+
+        echo '<script>alert("'.$message.'");</script>';
+
+        exit;
     }
 
 

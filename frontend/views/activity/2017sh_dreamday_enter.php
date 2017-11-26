@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title>2017上海新东方秋季教育展</title>
+    <title>我样 · 2017上海国际学校梦想日报名通道（12/09周六）</title>
 
     <meta name="viewport" content="width=device-width,height=device-height,maximum-scale=1.0,user-scalable=no" />
     <!--<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no" />-->
@@ -29,13 +29,14 @@
     </div>
     <div class="mypopcon">
         <div class="form1-content">
-            <form action="http://i.sh.xdf.cn/files/lab/collector/" id="form3" method="post" target="collector">
-                <input name="collection" value="2017上海新东方秋季教育展" type="hidden">
+            <form action="/collection" id="form3" method="post" target="collector">
+                <input name="act_name" value="2017sh_dreamday_enter" type="hidden">
+                <!--<input name="collection" value="2017上海新东方秋季教育展" type="hidden">
                 <input name="ac" value="add" type="hidden">
-                <input name="embbed" value="1" type="hidden">
+                <input name="embbed" value="1" type="hidden">-->
                 <!--<input type="hidden" name="successurl" value="" />-->
                 <!-- <input name="whateverurl" value="http://i.sh.xdf.cn/baoming" type="hidden"> -->
-                <input name="successmessage" value="提交申请成功，谢谢！" type="hidden">
+                <!--<input name="successmessage" value="提交申请成功，谢谢！" type="hidden">-->
                 <input name="c1" value="学生姓名*" type="hidden">
                 <input name="c2" value="手机号码*" type="hidden">
 
@@ -62,12 +63,13 @@
 <div class="bm2" style="">
     <div class="bm2inner">
 
-        <form action="http://i.sh.xdf.cn/files/lab/collector/" id="form2" method="post" target="collector">
-            <input name="collection" value="2017上海新东方秋季教育展" type="hidden">
+        <form action="/collection" id="form2" method="post" target="collector">
+            <input name="act_name" value="2017sh_dreamday_enter" type="hidden">
+            <!--<input name="collection" value="2017上海新东方秋季教育展" type="hidden">
             <input name="ac" value="add" type="hidden">
-            <input name="embbed" value="1" type="hidden">
+            <input name="embbed" value="1" type="hidden">-->
             <!--<input type="hidden" name="successurl" value="http://map.baidu.com/?newmap=1&ie=utf-8&s=s%26wd%3D%E4%B8%8A%E6%B5%B7%E5%B8%82%E5%BE%90%E6%B1%87%E5%8C%BA%E6%BC%95%E6%BA%AA%E5%8C%97%E8%B7%AF737%E5%BC%841%E5%8F%B7%E6%96%B0%E4%B8%9C%E6%96%B93%E6%A5%BC" />-->
-            <input name="successmessage" value="提交申请成功，谢谢！" type="hidden">
+            <!--<input name="successmessage" value="提交申请成功，谢谢！" type="hidden">-->
             <input name="c1" value="学生姓名*" type="hidden">
             <input name="c2" value="手机号码*" type="hidden">
 
@@ -95,15 +97,15 @@
 
 
         <div class="form1-content">
-            <form action="http://i.sh.xdf.cn/files/lab/collector/" id="form1" method="post" target="collector">
-                <input name="collection" value="2017上海新东方秋季教育展" type="hidden">
-                <input name="ac" value="add" type="hidden">
-                <input name="embbed" value="1" type="hidden">
+            <form action="/collection" id="form1" method="post" target="collector">
+                <input name="act_name" value="2017sh_dreamday_enter" type="hidden">
+                <!--<input name="ac" value="add" type="hidden">
+                <input name="embbed" value="1" type="hidden">-->
                 <!--<input type="hidden" name="successurl" value="" />-->
                 <!-- <input name="whateverurl" value="http://i.sh.xdf.cn/baoming" type="hidden"> -->
-                <input name="successmessage" value="提交申请成功，谢谢！" type="hidden">
-                <input name="c1" value="学生姓名*" type="hidden">
-                <input name="c2" value="手机号码*" type="hidden">
+                <!--<input name="successmessage" value="提交申请成功，谢谢！" type="hidden">-->
+                <!--<input name="c1" value="学生姓名*" type="hidden">
+                <input name="c2" value="手机号码*" type="hidden">-->
 
 
                 <div class="form1-input-con"><input type="text" name="v1" class="form1-input f060" value="学生姓名"></div>
@@ -120,7 +122,7 @@
 <!-- content -->
 <div class="bgf5">
     <div class="courses mw1080 auto ovh">
-        <div class="courses-title f090 b  tc">新东方·国际教育展</div>
+        <div class="courses-title f090 b  tc">我样 · 2017上海国际学校梦想日</div>
         <div class="coursebox">
             <div class="coursebox-image"><img src="/2017sh_dreamday_enter/img/p1.jpg" alt=""></div>
             <div class="coursebox-title f070 b">重磅嘉宾</div>
@@ -209,10 +211,11 @@
 
 
 
-<div class="tc f050 mt10 mb30 pb30">
+<div class="tc f050 mt10 mb60 pb30">
     <p class="text-center" id="copyright">
-        © 2015-2017 新东方教育科技集团有限公司 版权所有
-        <br /> 京ICP备05067667
+
+        Copyright©2015-2017 上海友风信息科技有限公司 版权所有
+        <br/> 沪ICP备15025850号  <a href="http://www.wowyoung.org" target="_blank">www.wowyoung.org</a>
     </p>
 </div>
 
