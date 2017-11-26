@@ -125,50 +125,50 @@
         <div class="courses-title f090 b  tc">我样 · 2017上海国际学校梦想日</div>
         <div class="coursebox">
             <div class="coursebox-image"><img src="/2017sh_dreamday_enter/img/p1.jpg" alt=""></div>
-            <div class="coursebox-title f070 b">重磅嘉宾</div>
+            <div class="coursebox-title f070 b">段落一</div>
             <div class="coursebox-line"></div>
             <div class="coursebox-text f055">
-                <span class="STYLE1">新东方教育科技集团董事长俞敏洪亲临上海</span><br/>
-                对话职场大咖，细谈留学对人生职场规划的影响力<br />
-                DOTA女王：在普林斯顿开了挂的人生<br />
-                知名投行高管：从复旦大学走向华尔街<br />
-                携程高管：英国留学之路开启新未来<br />
-                网红媒体人深度剖析当下择校热的痛点
-
+                段落一内容段落一内容段落一内容段落一内容<br/>
+                段落一内容段落一内容段落一内容段落一内容<br/>
+                段落一内容段落一内容段落一内容段落一内容<br/>
+                段落一内容段落一内容段落一内容段落一内容<br/>
+                段落一内容段落一内容段落一内容段落一内容<br/>
             </div>
             <div class="coursebox-btn"><a href="javascript:void(0)" onClick="pop1.show2()" class="btn0 f060">免费获取入场券</a></div>
         </div>
         <div class="coursebox">
             <div class="coursebox-image"><img src="/2017sh_dreamday_enter/img/p2.jpg" alt=""></div>
-            <div class="coursebox-title f070 b">中学生专场</div>
+            <div class="coursebox-title f070 b">段落二</div>
             <div class="coursebox-line"></div>
             <div class="coursebox-text f055">
-                深受沪上家长喜爱媒体人李梓新深剖择校焦虑<br/>
-                包校前校长吴子健带来上海热门国际学校招生标准<br/>
-                上海虎妈虎爸思想碰撞，交流如何培养家中牛娃<br/>
-                <span class="STYLE1">国际学校统一入学考试：沪上部分国际/双语学校认可的统一考卷，比其他考生多一道进入一流国际学校的大门。</span>                </div>
+                段落二内容段落二内容段落二内容段落二内容<br/>
+                段落二内容段落二内容段落二内容段落二内容<br/>
+                段落二内容段落二内容段落二内容段落二内容<br/>
+                段落二内容段落二内容段落二内容段落二内容<br/>
+                段落二内容段落二内容段落二内容段落二内容<br/>
+            </div>
             <div class="coursebox-btn"><a href="javascript:void(0)" onClick="pop1.show2()" class="btn0 f060">免费获取入场券</a></div>
         </div>
         <div class="coursebox">
             <div class="coursebox-image"><img src="/2017sh_dreamday_enter/img/p3.jpg" alt=""></div>
-            <div class="coursebox-title f070 b">大学生专场</div>
+            <div class="coursebox-title f070 b">段落三</div>
             <div class="coursebox-line"></div>
             <div class="coursebox-text f055">
-
-                总结沪上各大优质双语学校的2017申请季录取情况<br/>
-                上海数十所高校毕业生的海外录取情况<br/>
-                国内考研情况和就业情况大比拼：2017届的学长学姐都去哪儿了<br/>
-                GRE考试高分秘籍现场揭秘
-
+                段落三内容段落三内容段落三内容段落三内容<br/>
+                段落三内容段落三内容段落三内容段落三内容<br/>
+                段落三内容段落三内容段落三内容段落三内容<br/>
+                段落三内容段落三内容段落三内容段落三内容<br/>
+                段落三内容段落三内容段落三内容段落三内容<br/>
             </div>
             <div class="coursebox-btn"><a href="javascript:void(0)" onClick="pop1.show2()" class="btn0 f060">免费获取入场券</a></div>
         </div>
         <div class="coursebox">
             <div class="coursebox-image"><img src="/2017sh_dreamday_enter/img/p4.jpg" alt=""></div>
-            <div class="coursebox-title f070 b">全年龄段国际教育规划</div>
+            <div class="coursebox-title f070 b">段落四</div>
             <div class="coursebox-line"></div>
             <div class="coursebox-text f055">
-                无论是幼儿园、小学、中学还是大学，该提前多久规划留学，几年级是进入国际教育的最佳年龄？
+                段落四内容段落四内容段落四内容段落四内容<br/>
+                段落四内容段落四内容段落四内容段落四内容
             </div>
             <div class="coursebox-btn"><a href="javascript:void(0)" onClick="pop1.show2()" class="btn0 f060">免费获取入场券</a></div>
         </div>
@@ -176,7 +176,7 @@
     </div>
 </div>
 
-<div class="pngs-con rel"  style="">
+<!--<div class="pngs-con rel"  style="">
     <div class="pngs abs ovh">
 
         <div class="pngs-title f100 b white tc">用心做教育，用爱筑未来</div>
@@ -204,7 +204,7 @@
     </div>
 
 
-</div>
+</div>-->
 
 <script src="/2017sh_dreamday_enter/js/default.js"></script>
 
