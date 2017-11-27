@@ -13,7 +13,7 @@ return [
     'controllerNamespace' => 'frontend\controllers',
     'modules' => [
         'admin' => [
-            'class' => 'app\modules\admin\Module',
+            'class' => 'frontend\modules\admin\Module',
         ],
     ],
     'components' => [
@@ -48,7 +48,7 @@ return [
             'rules' => [
                 //'2017sh_dreamday_enter.html' => 'site/index',
                 '<act_name:\w+>.html' => 'site/index',
-                'collection' => 'site/collection'
+                'collection' => 'site/collection',
             ],
         ],
 
