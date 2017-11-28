@@ -124,51 +124,49 @@
     <div class="courses mw1080 auto ovh">
         <div class="courses-title f090 b  tc">我样 · 2017上海国际学校梦想日</div>
         <div class="coursebox">
-            <div class="coursebox-image"><img src="/2017sh_dreamday_enter/img/p1.jpg" alt=""></div>
-            <div class="coursebox-title f070 b">段落一</div>
+            <div class="coursebox-image"><img src="/2017sh_dreamday_enter/img/p1x.jpg" alt=""></div>
+            <div class="coursebox-title f070 b">重磅嘉宾</div>
             <div class="coursebox-line"></div>
             <div class="coursebox-text f055">
-                段落一内容段落一内容段落一内容段落一内容<br/>
-                段落一内容段落一内容段落一内容段落一内容<br/>
-                段落一内容段落一内容段落一内容段落一内容<br/>
-                段落一内容段落一内容段落一内容段落一内容<br/>
-                段落一内容段落一内容段落一内容段落一内容<br/>
+                世外徐俭校长<br/>
+                世外教育服务发展有限公司总经理<br/>
+                上海世界外国语小学、中学副董事长<br/>
+                12月9日亲临现场<br/>
+                为您讲述他眼中的国际化教育
             </div>
             <div class="coursebox-btn"><a href="javascript:void(0)" onClick="pop1.show2()" class="btn0 f060">免费获取入场券</a></div>
         </div>
         <div class="coursebox">
-            <div class="coursebox-image"><img src="/2017sh_dreamday_enter/img/p2.jpg" alt=""></div>
-            <div class="coursebox-title f070 b">段落二</div>
+            <div class="coursebox-image"><img src="/2017sh_dreamday_enter/img/p2x.jpg" alt=""></div>
+            <div class="coursebox-title f070 b">入学测评卷</div>
             <div class="coursebox-line"></div>
             <div class="coursebox-text f055">
-                段落二内容段落二内容段落二内容段落二内容<br/>
-                段落二内容段落二内容段落二内容段落二内容<br/>
-                段落二内容段落二内容段落二内容段落二内容<br/>
-                段落二内容段落二内容段落二内容段落二内容<br/>
-                段落二内容段落二内容段落二内容段落二内容<br/>
+                报名即可免费领取：<br/>
+                沪上部分国际/双语学校认可的入学测评卷<br/>
+                让你比其他考生多一道进入一流国际学校的大门
             </div>
             <div class="coursebox-btn"><a href="javascript:void(0)" onClick="pop1.show2()" class="btn0 f060">免费获取入场券</a></div>
         </div>
         <div class="coursebox">
-            <div class="coursebox-image"><img src="/2017sh_dreamday_enter/img/p3.jpg" alt=""></div>
-            <div class="coursebox-title f070 b">段落三</div>
+            <div class="coursebox-image"><img src="/2017sh_dreamday_enter/img/p3x.jpg" alt=""></div>
+            <div class="coursebox-title f070 b">50+所学校</div>
             <div class="coursebox-line"></div>
             <div class="coursebox-text f055">
-                段落三内容段落三内容段落三内容段落三内容<br/>
-                段落三内容段落三内容段落三内容段落三内容<br/>
-                段落三内容段落三内容段落三内容段落三内容<br/>
-                段落三内容段落三内容段落三内容段落三内容<br/>
-                段落三内容段落三内容段落三内容段落三内容<br/>
+                国际高中谁能上？怎么考？学费要多少？<br/>
+                国际高中百所学校怎么选？四大课程门派怎么挑？<br/>
+                国际高中vs重点高中，哪条路更适合我家孩子？<br/>
+                一线国际高中热度大增，如何突围入学考试？<br/>
+                50+所国际学校齐到场，让你一次问清楚
             </div>
             <div class="coursebox-btn"><a href="javascript:void(0)" onClick="pop1.show2()" class="btn0 f060">免费获取入场券</a></div>
         </div>
         <div class="coursebox">
-            <div class="coursebox-image"><img src="/2017sh_dreamday_enter/img/p4.jpg" alt=""></div>
-            <div class="coursebox-title f070 b">段落四</div>
+            <div class="coursebox-image"><img src="/2017sh_dreamday_enter/img/p4x.jpg" alt=""></div>
+            <div class="coursebox-title f070 b">时间地点</div>
             <div class="coursebox-line"></div>
             <div class="coursebox-text f055">
-                段落四内容段落四内容段落四内容段落四内容<br/>
-                段落四内容段落四内容段落四内容段落四内容
+                12月9日 上午8点半开始签到入场<br/>
+                上海浦西洲际酒店3楼（恒丰路500号，近天目西路）
             </div>
             <div class="coursebox-btn"><a href="javascript:void(0)" onClick="pop1.show2()" class="btn0 f060">免费获取入场券</a></div>
         </div>
