@@ -24,7 +24,7 @@
 <div class="qr" style="display: ">
 
     <div class="kspop-header">
-        预约到场更有精彩大礼领取
+        预约到场领取重磅独家资料
         <a href="javascript:void(0)" onClick="close2(this)" class="kspop-close">×</a>
     </div>
     <div class="mypopcon">
@@ -44,6 +44,7 @@
                 <div class="form1-input-con"><input type="text" name="v1" class="form1-input f060" value="学生姓名"></div>
                 <div class="form1-input-con"><input type="text" name="v2" class="form1-input f060" value="手机号码"></div>
                 <div class="form1-input-con"><a href="javascript:void(0)" onClick="document.getElementById('form3').submit()" class="btn0 f060">免费获取入场券</a></div>
+                <div style="color:red;font-size:14px;margin-top:20px;">活动前3天发送确认短信</div>
             </form>
         </div>
         <!-- <form action=""><input type="text" size=10><input type="button" value="ok"></form> -->
@@ -73,7 +74,7 @@
             <input name="c1" value="学生姓名*" type="hidden">
             <input name="c2" value="手机号码*" type="hidden">
 
-            <span class="f055">预约到场更有精彩大礼领取
+            <span class="f055">预约到场领取重磅独家资料
 &nbsp;&nbsp;&nbsp;&nbsp;</span>
             <span class="f055">学生姓名</span>
             <input type="text" name="v1" class="form1-input f055" value="学生姓名">
@@ -84,13 +85,13 @@
     </div>
 </div>
 
-<div class="form1-bg-m"><img src="/2017sh_dreamday_enter/img/banner-m.jpg?1" alt=""></div>
+<div class="form1-bg-m"><img src="/2017sh_dreamday_enter/img/banner-m-new.jpg" alt=""></div>
 
 <!-- content banner(background centered mode) -->
 <div class="form1-bg rel"  style="">
     <div class="form1-con">
         <div class="form1-title">
-            <div class="form1-title-text f060 white">预约到场更有精彩大礼领取
+            <div class="form1-title-text f060 white">预约到场领取重磅独家资料
             </div>
         </div>
         <iframe name="collector" style="display: none"></iframe>
@@ -111,6 +112,7 @@
                 <div class="form1-input-con"><input type="text" name="v1" class="form1-input f060" value="学生姓名"></div>
                 <div class="form1-input-con"><input type="text" name="v2" class="form1-input f060" value="手机号码"></div>
                 <div class="form1-input-con"><a href="javascript:void(0)" onClick="document.getElementById('form1').submit()" class="btn0 f060">免费获取入场券</a></div>
+                <div style="color:red;font-size:14px;margin-top:20px;">活动前3天发送确认短信</div>
             </form>
         </div>
     </div>
@@ -152,10 +154,15 @@
             <div class="coursebox-title f070 b">50+所学校</div>
             <div class="coursebox-line"></div>
             <div class="coursebox-text f055">
-                国际高中谁能上？怎么考？学费要多少？<br/>
-                国际高中百所学校怎么选？四大课程门派怎么挑？<br/>
-                国际高中vs重点高中，哪条路更适合我家孩子？<br/>
-                一线国际高中热度大增，如何突围入学考试？<br/>
+                <ul style="list-style: disc;padding-left: 20px;">
+                    <li>国际高中谁能上？怎么考？学费要多少？</li>
+                    <li>国际高中百所学校怎么选？四大课程门派怎么挑？</li>
+                    <li>国际高中vs重点高中，哪条路更适合我家孩子？</li>
+                    <li>一线国际高中热度大增，如何突围入学考试？</li>
+                <!--·<br/>
+                ·国际高中vs重点高中，哪条路更适合我家孩子？<br/>
+                ·一线国际高中热度大增，如何突围入学考试？<br/>-->
+                </ul><Br/>
                 50+所国际学校齐到场，让你一次问清楚
             </div>
             <div class="coursebox-btn"><a href="javascript:void(0)" onClick="pop1.show2()" class="btn0 f060">免费获取入场券</a></div>
