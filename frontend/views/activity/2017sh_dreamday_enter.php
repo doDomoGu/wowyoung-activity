@@ -85,7 +85,7 @@
     </div>
 </div>
 
-<div class="form1-bg-m"><img src="/2017sh_dreamday_enter/img/banner-m-new.jpg" alt=""></div>
+<div class="form1-bg-m"><img src="/2017sh_dreamday_enter/img/banner-m-new2.jpg" alt=""></div>
 
 <!-- content banner(background centered mode) -->
 <div class="form1-bg rel"  style="">
