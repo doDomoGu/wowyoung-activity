@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width,height=device-height,maximum-scale=1.0,user-scalable=no" />
     <!--<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no" />-->
     <meta name="format-detection" content="telephone=no" />
-    <link rel="stylesheet" href="/2017sh_dreamday_enter/css/ql.css">
+    <link rel="stylesheet" href="/2017sh_dreamday_enter/css/ql.css?v=123">
     <style>
     </style>
 
