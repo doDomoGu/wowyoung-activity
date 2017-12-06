@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <title>我样 · 2017上海国际学校梦想日报名通道（12/09周六）</title>
+    <title>我样 · 2017上海国际梦想日报名通道（12/09周六）</title>
 
     <meta name="viewport" content="width=device-width,height=device-height,maximum-scale=1.0,user-scalable=no" />
     <!--<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no" />-->
@@ -85,7 +85,7 @@
     </div>
 </div>
 
-<div class="form1-bg-m"><img src="/2017sh_dreamday_enter/img/banner-m-new3_1205.jpg" alt=""></div>
+<div class="form1-bg-m"><img src="/2017sh_dreamday_enter/img/banner-m-new4.jpg" alt=""></div>
 
 <!-- content banner(background centered mode) -->
 <div class="form1-bg rel"  style="">
@@ -124,7 +124,7 @@
 <!-- content -->
 <div class="bgf5">
     <div class="courses mw1080 auto ovh">
-        <div class="courses-title f090 b  tc">我样 · 2017上海国际学校梦想日</div>
+        <div class="courses-title f090 b  tc">我样 · 2017上海国际梦想日</div>
         <div class="coursebox">
             <div class="coursebox-image"><img src="/2017sh_dreamday_enter/img/p1x.jpg" alt=""></div>
             <div class="coursebox-title f070 b">重磅嘉宾</div>
@@ -144,26 +144,26 @@
             <div class="coursebox-line"></div>
             <div class="coursebox-text f055">
                 报名即可免费领取：<br/>
-                沪上部分国际/双语学校认可的入学测评卷<br/>
-                让你比其他考生多一道进入一流国际学校的大门
+                沪上部分国际/双语认可的入学测评卷<br/>
+                让你比其他考生多一道进入一流国际的大门
             </div>
             <div class="coursebox-btn"><a href="javascript:void(0)" onClick="pop1.show2()" class="btn0 f060">免费获取入场券</a></div>
         </div>
         <div class="coursebox">
             <div class="coursebox-image"><img src="/2017sh_dreamday_enter/img/p3x.jpg" alt=""></div>
-            <div class="coursebox-title f070 b">50+所学校</div>
+            <div class="coursebox-title f070 b">50+所</div>
             <div class="coursebox-line"></div>
             <div class="coursebox-text f055">
                 <ul style="list-style: disc;padding-left: 20px;">
                     <li>国际高中谁能上？怎么考？学费要多少？</li>
-                    <li>国际高中百所学校怎么选？四大课程门派怎么挑？</li>
+                    <li>国际高中百所怎么选？四大课程门派怎么挑？</li>
                     <li>国际高中vs重点高中，哪条路更适合我家孩子？</li>
                     <li>一线国际高中热度大增，如何突围入学考试？</li>
                 <!--·<br/>
                 ·国际高中vs重点高中，哪条路更适合我家孩子？<br/>
                 ·一线国际高中热度大增，如何突围入学考试？<br/>-->
                 </ul><Br/>
-                50+所国际学校齐到场，让你一次问清楚
+                50+所国际齐到场，让你一次问清楚
             </div>
             <div class="coursebox-btn"><a href="javascript:void(0)" onClick="pop1.show2()" class="btn0 f060">免费获取入场券</a></div>
         </div>
